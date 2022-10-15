@@ -4,11 +4,12 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: M_SNB_Grass
   m_Shader: {fileID: 4800000, guid: f7835d26e94875f47848e4600cd0ab70, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON
+  m_ShaderKeywords: _ALPHATEST_ON _TRANSLUCENCY1_ON _TRANSLUCENCY_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -83,6 +84,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _BumpScale: 1
     - _Cutoff: 0.75
     - _DetailNormalMapScale: 1
@@ -118,6 +120,14 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SubsurfaceDistortionModifier: 0.5
+    - _TransAmbient: 0.5
+    - _TransDirect: 0.9
+    - _TransNormal: 0.1
+    - _TransScattering: 1.8
+    - _TransShadow: 0.5
+    - _TransStrength: 1.5
+    - _Translucency: 1
+    - _Translucency1: 1
     - _TranslucencyForce: 0.4
     - _TranslucencyLightInfluence: 0
     - _TranslucencyModifier: 0.5
@@ -146,14 +156,15 @@ Material:
     - _FlowerColor02: {r: 1, g: 0.70334506, b: 0.15566033, a: 0}
     - _FlowerInside01: {r: 1, g: 0.7789562, b: 0.12735844, a: 0}
     - _FlowerInside02: {r: 1, g: 0.9507267, b: 0.6084906, a: 0}
-    - _FlowerInsideColor01: {r: 1, g: 0.7789562, b: 0.12735835, a: 0}
+    - _FlowerInsideColor01: {r: 1, g: 0.7789562, b: 0.12735826, a: 0}
     - _FlowerInsideColor02: {r: 1, g: 0.9507267, b: 0.6084906, a: 0}
     - _FlowerMainColor01: {r: 1, g: 0.9637498, b: 0.759434, a: 0}
-    - _FlowerMainColor02: {r: 1, g: 0.70334506, b: 0.15566024, a: 0}
-    - _GrassColor: {r: 0.43923554, g: 0.735849, b: 0.21172994, a: 1}
+    - _FlowerMainColor02: {r: 1, g: 0.70334506, b: 0.15566015, a: 0}
+    - _GrassColor: {r: 0.43923545, g: 0.735849, b: 0.21172985, a: 1}
     - _GrassColorVariation: {r: 0.5264154, g: 0.7264151, b: 0.21586864, a: 0}
-    - _HeightColor: {r: 0.7004818, g: 0.8867924, b: 0.41411522, a: 1}
+    - _HeightColor: {r: 0.7004818, g: 0.8867924, b: 0.4141151, a: 1}
     - _SSSColor: {r: 1, g: 0.9439245, b: 0.5801887, a: 0}
     - _SSSTint: {r: 1, g: 0.99379236, b: 0.38207522, a: 0}
     - _SpecularColor: {r: 0.3921569, g: 0.3921569, b: 0.3921569, a: 1}
     - _TranslucencyTint: {r: 1, g: 0.96403116, b: 0.18396205, a: 0}
+  m_BuildTextureStacks: []

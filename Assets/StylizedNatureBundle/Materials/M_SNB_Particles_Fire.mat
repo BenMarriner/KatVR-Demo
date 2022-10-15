@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: M_SNB_Particles_Fire
   m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHATEST_ON _REQUIRE_UV2
@@ -142,5 +143,6 @@ Material:
     - _SSSColor: {r: 0.9106521, g: 1, b: 0.2688677, a: 0}
     - _SSSTint: {r: 0.9106521, g: 1, b: 0.26886767, a: 0}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
-    - _TintColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _TintColor: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0.5}
     - _TranslucencyTint: {r: 1, g: 0.99379236, b: 0.38207546, a: 0}
+  m_BuildTextureStacks: []

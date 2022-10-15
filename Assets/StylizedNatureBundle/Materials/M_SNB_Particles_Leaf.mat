@@ -1,19 +1,34 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8007620941086962868
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 4
 --- !u!21 &2100000
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: M_SNB_Particles_Leaf
-  m_Shader: {fileID: 208, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHATEST_ON _REQUIRE_UV2
-  m_LightmapFlags: 0
+  m_Shader: {fileID: 4800000, guid: 8516d7a69675844a7a0b7095af7c46af, type: 3}
+  m_ShaderKeywords: _ALPHATEST_ON _RECEIVE_SHADOWS_OFF
+  m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -24,6 +39,10 @@ Material:
         m_Offset: {x: 0.42, y: 0.935}
     - _AlphaTex:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: a24ed9918c74aeb43a1493b9ad1dd944, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -70,12 +89,18 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - PixelSnap: 0
+    - _AlphaClip: 1
+    - _Blend: 0
     - _BlendOp: 0
     - _BumpScale: 1
     - _CameraFadingEnabled: 0
@@ -83,7 +108,7 @@ Material:
     - _CameraNearFadeDistance: 1
     - _ColorMode: 0
     - _Cull: 2
-    - _Cutoff: 0.5
+    - _Cutoff: 0.576
     - _DetailNormalMapScale: 1
     - _DirectionalTranslucency: 0.2
     - _DistortionBlend: 0.5
@@ -94,6 +119,7 @@ Material:
     - _EmissionEnabled: 0
     - _EmissionPower: 0
     - _EnableExternalAlpha: 0
+    - _FlipbookBlending: 0
     - _FlipbookMode: 1
     - _Float0: 1
     - _GlossMapScale: 1
@@ -108,10 +134,14 @@ Material:
     - _Parallax: 0.02
     - _PointLightPunchTrough: 1
     - _PointLightTranslucency: 1
+    - _QueueOffset: 0
+    - _ReceiveShadows: 0
     - _SSSForce: 0.4
     - _SSSPower: 1
     - _SSSScale: 1
     - _ShadowStrength: 0.2
+    - _Smoothness: 0.5
+    - _SmoothnessSource: 0
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 0
     - _SoftParticlesFarFadeDistance: 1
@@ -119,6 +149,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SubsurfaceDistortionModifier: 0.5
+    - _Surface: 0
     - _TranslucencyForce: 0.4
     - _TrunkWindAmplitude: 0
     - _TrunkWindPower: 0
@@ -132,6 +163,8 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColorAddSubDiff: {r: 1, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorAddSubDiff: {r: -1, g: 1, b: 0, a: 0}
@@ -142,5 +175,7 @@ Material:
     - _SSSColor: {r: 0.9106521, g: 1, b: 0.2688677, a: 0}
     - _SSSTint: {r: 0.9106521, g: 1, b: 0.26886767, a: 0}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _TranslucencyTint: {r: 1, g: 0.99379236, b: 0.38207546, a: 0}
+  m_BuildTextureStacks: []
