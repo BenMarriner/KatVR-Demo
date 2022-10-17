@@ -201,6 +201,11 @@ MonoBehaviour:
   isHeld: 0
   basketCollider: {fileID: 4969121638086831744}
   fruitTrigger: {fileID: 7152200824282172656}
+  appleCount: 0
+  bananaCount: 0
+  grapesCount: 0
+  mangoCount: 0
+  passionfruitCount: 0
 --- !u!1 &2126406673016958335
 GameObject:
   m_ObjectHideFlags: 0

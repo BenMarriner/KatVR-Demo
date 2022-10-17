@@ -10,6 +10,8 @@ public class Fruit : MonoBehaviour
 {
     private Interactable interactable;
 
+    public enum Fruits { Apple, Banana, Grapes, Mango, Passionfruit }
+
     [HideInInspector] public bool isBeingHeldInBasket;
 
     // Start is called before the first frame update

@@ -10,6 +10,7 @@ public class Basket : MonoBehaviour
     [SerializeField] private bool isHeld;
     public Collider basketCollider;
     public Collider fruitTrigger;
+    public int appleCount = 0, bananaCount = 0, grapesCount = 0, mangoCount = 0, passionfruitCount = 0;
 
     // Start is called before the first frame update
     void Start()
