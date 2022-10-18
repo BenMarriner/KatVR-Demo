@@ -27,6 +27,10 @@ PrefabInstance:
       propertyPath: poseNames.Array.data[0]
       value: Banana (MAIN)
       objectReference: {fileID: 0}
+    - target: {fileID: -1301407886842321240, guid: d854b593910b6e843a65581635eca25d, type: 3}
+      propertyPath: fruitType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1244508428018580720, guid: d854b593910b6e843a65581635eca25d, type: 3}
       propertyPath: m_Mesh
       value: 
