@@ -8,6 +8,7 @@ public class UIScaler : MonoBehaviour
 
     public void OnValidate()
     {
-        transform.GetComponentInChildren<RectTransform>().localScale = Vector3.one * UIScale * _uiScaleMultiplier;
+        var rectTransform = transform.GetComponentInChildren<RectTransform>();
+        if (rectTransform) rectTransform.localScale = Vector3.one * UIScale * _uiScaleMultiplier;
     }
 }
