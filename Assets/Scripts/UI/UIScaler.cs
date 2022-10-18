@@ -8,6 +8,6 @@ public class UIScaler : MonoBehaviour
 
     public void OnValidate()
     {
-        transform.Find("Canvas").GetComponent<RectTransform>().localScale = Vector3.one * UIScale * _uiScaleMultiplier;
+        transform.GetComponent<RectTransform>().localScale = Vector3.one * UIScale * _uiScaleMultiplier;
     }
 }

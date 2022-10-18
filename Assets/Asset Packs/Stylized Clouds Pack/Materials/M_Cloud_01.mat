@@ -22,8 +22,6 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Cloud_01
   m_Shader: {fileID: -6465566751694194690, guid: 4613de7ffca4c704e8c5bcb015fced6a, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -32,7 +30,6 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -114,7 +111,7 @@ Material:
     - _GlossyReflections: 0
     - _HeigthOffset: -0.665
     - _Metallic: 0
-    - _NoisePower: 0.345
+    - _NoisePower: 0
     - _NoiseTiling: 8.81
     - _OcclusionStrength: 1
     - _QueueControl: 0
@@ -130,8 +127,8 @@ Material:
     m_Colors:
     - Vector3_DF4CF5A5: {r: 1, g: 5, b: 1, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SecColor: {r: 0.14482601, g: 0.39009526, b: 0.45400003, a: 1}
+    - _SecColor: {r: 0.5235849, g: 0.89748025, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
