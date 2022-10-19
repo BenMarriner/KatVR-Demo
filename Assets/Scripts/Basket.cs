@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
@@ -26,6 +27,13 @@ public class Basket : MonoBehaviour
             isHeld = interactable.attachedToHand.ObjectIsAttached(gameObject);
         }
         else isHeld = false;
+
+        // Evaluate numbers of fruits in basket
+        appleCount          = GetComponentsInChildren<Fruit>().Count(fruit => fruit.fruitType == Fruit.Fruits.Apple);
+        bananaCount         = GetComponentsInChildren<Fruit>().Count(fruit => fruit.fruitType == Fruit.Fruits.Banana);
+        grapesCount         = GetComponentsInChildren<Fruit>().Count(fruit => fruit.fruitType == Fruit.Fruits.Grapes);
+        mangoCount          = GetComponentsInChildren<Fruit>().Count(fruit => fruit.fruitType == Fruit.Fruits.Mango);
+        passionfruitCount   = GetComponentsInChildren<Fruit>().Count(fruit => fruit.fruitType == Fruit.Fruits.Passionfruit);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -59,7 +67,7 @@ public class Basket : MonoBehaviour
     }
 
     private bool IsHoldingBasketAndFruit(GameObject obj, out Fruit outFruitComponent)
-    {        
+    {
         outFruitComponent = null;
 
         if (!isHeld) return false; // Is the player holding the basket?

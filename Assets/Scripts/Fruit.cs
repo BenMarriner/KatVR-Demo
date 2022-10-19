@@ -11,7 +11,9 @@ public class Fruit : MonoBehaviour
     private Interactable interactable;
 
     public enum Fruits { Apple, Banana, Grapes, Mango, Passionfruit }
+    
 
+    public Fruits fruitType;
     [HideInInspector] public bool isBeingHeldInBasket;
 
     // Start is called before the first frame update
@@ -24,15 +26,14 @@ public class Fruit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(isBeingHeldInBasket);
     }
 
     // Place fruit in basket
     private void Interactable_onDetachedFromHand(Hand hand)
     {
+        var basket = hand.otherHand.currentAttachedObject;
         if (isBeingHeldInBasket)
         {
-            var basket = hand.otherHand.currentAttachedObject;
             GetComponent<Rigidbody>().isKinematic = true;
             hand.currentAttachedObject.transform.SetParent(basket.transform);
         }
@@ -43,5 +44,4 @@ public class Fruit : MonoBehaviour
 
         Debug.Log("Detaching from hand");
     }
-
 }
