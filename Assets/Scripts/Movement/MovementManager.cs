@@ -21,6 +21,8 @@ public class MovementManager : MonoBehaviour
 
     public LateralMovements currentLateralSetting;
     public RotationalMovements currentRotationalSetting;
+    public float currentSnapAngle;
+    public float currentTurnSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,17 @@ public class MovementManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public void SetSnapTurnAngle(float angle)
+    {
+        currentSnapAngle = angle;
+        snapTurn.snapAngle = currentSnapAngle;
+    }
+
+    public void SetTurnSpeed(float speed)
+    {
+        currentTurnSpeed = speed;
     }
 
     public void SetMovements(LateralMovements lateralType, RotationalMovements rotationalType)
