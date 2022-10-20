@@ -130,9 +130,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 545327538940508224, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 724309508173321511, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
       propertyPath: m_Name
       value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2215996183206624773, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1634327525}
+    - target: {fileID: 6373669340694426761, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6477686541238777615, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7774605696192870534, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
       propertyPath: m_RootOrder
@@ -177,6 +193,30 @@ PrefabInstance:
     - target: {fileID: 7774605696192870534, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113491776653389984, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876396600176628543, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876396600176628543, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 455377541}
+    - target: {fileID: 8876396600176628543, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876396600176628543, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876396600176628543, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
@@ -429,6 +469,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4277311321152838, guid: 3fa9b6b5a8e13a9448094f6797468a72, type: 3}
   m_PrefabInstance: {fileID: 791033106}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &455377541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6373669340694426761, guid: 55edeab26373e004c877332dda5b3eb5, type: 3}
+  m_PrefabInstance: {fileID: 11077363}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &462910922 stripped
 MonoBehaviour:
@@ -1261,6 +1306,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4277311321152838, guid: 3fa9b6b5a8e13a9448094f6797468a72, type: 3}
   m_PrefabInstance: {fileID: 2036362970}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1634327525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4542192731805553986, guid: 3c5958f32ed3124469ad79cb69f3eff9, type: 3}
+  m_PrefabInstance: {fileID: 4405817816136934154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1747734460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,14 +1568,6 @@ PrefabInstance:
       propertyPath: basket
       value: 
       objectReference: {fileID: 462910922}
-    - target: {fileID: 4542192731795946456, guid: 3c5958f32ed3124469ad79cb69f3eff9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4542192731802354046, guid: 3c5958f32ed3124469ad79cb69f3eff9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4542192731805553986, guid: 3c5958f32ed3124469ad79cb69f3eff9, type: 3}
       propertyPath: m_Name
       value: DemoPlayer
