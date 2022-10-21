@@ -435,10 +435,10 @@ MonoBehaviour:
   teleportMovement: {fileID: 1033439370453993747}
   continuousLateralMovement: {fileID: 3451473468001827981}
   snapTurn: {fileID: 4511514318171854846}
-  currentLateralSetting: 0
-  currentRotationalSetting: 0
-  currentSnapAngle: 0
-  currentTurnSpeed: 0
+  currentLateralSetting: 1
+  currentRotationalSetting: 1
+  currentSnapAngle: 15
+  currentTurnSpeed: 10
 --- !u!1 &4542192731805555338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4541644671174440552
 Transform:
   m_ObjectHideFlags: 0
@@ -2969,7 +2969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 153878, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: m_RootOrder
@@ -3017,7 +3017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11445746, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
       propertyPath: traceLayerMask.m_Bits
-      value: 8
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
