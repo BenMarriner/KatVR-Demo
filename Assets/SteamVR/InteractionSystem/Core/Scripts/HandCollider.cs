@@ -13,7 +13,7 @@ namespace Valve.VR.InteractionSystem
         public LayerMask collisionMask;
 
         Collider[] colliders;
-
+        public Collider[] Colliders { get => colliders; }
 
         public FingerColliders fingerColliders;
 

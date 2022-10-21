@@ -17,6 +17,8 @@ public class Basket : MonoBehaviour
     void Start()
     {
         interactable = GetComponent<Interactable>();
+        var bodyCollider = GameObject.Find("BodyCollider").GetComponent<Collider>();
+        Physics.IgnoreCollision(basketCollider, bodyCollider);
     }
 
     // Update is called once per frame

@@ -106,13 +106,19 @@ public class KATDevice : MonoBehaviour {
                 KATDevice_Walk.Instance.UpdateData();
                 TargetTransform(MovementStyle);
                 if (Input.GetKeyDown(ResetCameraKey))
-                    KATDevice_Walk.Instance.ResetCamera(vrHandset);
+                    Calibrate();
                 break;
             case DeviceTypeList.ComingSoon:
                 break;
             default:
                 break;
         }
+    }
+
+    // Function for calibrate button in the settings menu
+    public void Calibrate()
+    {
+        KATDevice_Walk.Instance.ResetCamera(vrHandset);
     }
     #endregion
 

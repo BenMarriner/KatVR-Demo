@@ -50,6 +50,7 @@ namespace Valve.VR.InteractionSystem
             GetComponent<SteamVR_Behaviour_Pose>().onTransformUpdated.AddListener(UpdateHand);
         }
 
+
         // cached transformations
         Matrix4x4 wristToRoot;
         Matrix4x4 rootToArmature;

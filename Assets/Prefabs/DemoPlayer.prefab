@@ -52,7 +52,7 @@ MonoBehaviour:
   vrHandset: {fileID: 4542192731805891882}
   multiply: 1
   multiplyBack: 1
-  MovementStyle: 0
+  MovementStyle: 1
   target_Rig: {fileID: 0}
   ResetCameraKey: 0
 --- !u!1 &4542192731805548692
@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 4542192731805902138}
   - component: {fileID: 4542192731795932214}
   - component: {fileID: 1090556837}
+  - component: {fileID: 772130484}
   m_Layer: 0
   m_Name: DemoPlayer
   m_TagString: Untagged
@@ -439,6 +440,22 @@ MonoBehaviour:
   currentRotationalSetting: 1
   currentSnapAngle: 15
   currentTurnSpeed: 10
+--- !u!54 &772130484
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542192731805553986}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 1
 --- !u!1 &4542192731805555338
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,7 +857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4542192731805899566
 Transform:
   m_ObjectHideFlags: 0
@@ -1624,7 +1641,6 @@ GameObject:
   - component: {fileID: 4542192731805938500}
   - component: {fileID: 4542192731802354046}
   - component: {fileID: 4542192731795946456}
-  - component: {fileID: 4542192731810938214}
   m_Layer: 27
   m_Name: BodyCollider
   m_TagString: Untagged
@@ -1657,7 +1673,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.15
+  m_Radius: 0.2
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.75, z: 0}
@@ -1674,22 +1690,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   head: {fileID: 0}
---- !u!54 &4542192731810938214
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4542192731805637908}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 1
 --- !u!1 &4542603393793055824
 GameObject:
   m_ObjectHideFlags: 0

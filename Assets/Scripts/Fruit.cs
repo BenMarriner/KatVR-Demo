@@ -21,6 +21,9 @@ public class Fruit : MonoBehaviour
     {
         interactable = GetComponent<Interactable>();
         interactable.onDetachedFromHand += Interactable_onDetachedFromHand;
+
+        var bodyCollider = GameObject.Find("BodyCollider").GetComponent<Collider>();
+        Physics.IgnoreCollision(GetComponent<Collider>(), bodyCollider);
     }
 
     // Update is called once per frame
