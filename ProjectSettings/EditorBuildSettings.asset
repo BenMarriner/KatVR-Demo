@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainLevel.unity
     guid: 499911b257948a140934acd264c5314d
+  - enabled: 1
+    path: Assets/Scenes/orchard_island.unity
+    guid: 201bcd66fcbb177409b0c7b9858b4675
+  - enabled: 1
+    path: Assets/Scenes/waterfall_island.unity
+    guid: 03d701965b19bb044bdfc185e34f853f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 114c259985399ce4ca9b9bf3bc765cde, type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: d3ff25391853af7488c2cd2cd3f0d970, type: 2}
