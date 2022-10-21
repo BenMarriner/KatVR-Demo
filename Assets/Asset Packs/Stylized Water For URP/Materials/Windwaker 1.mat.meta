@@ -1,13 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Asset Packs/Stylized Water For URP/Materials/Windwaker 1.mat.meta
-guid: 595d759149193204d95611f28d958727
+guid: 02c218e4859b77f4e9d338bf65d4cdaf
 NativeFormatImporter:
-========
-guid: 25315a8e7ca12d2438589965d92cb970
-PrefabImporter:
->>>>>>>> 0619073aa494781494e8c2e5230030afb48bd66f:Assets/Prefabs/UI/MainMenuWindow.prefab.meta
   externalObjects: {}
-  mainObjectFileID: 2100000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
