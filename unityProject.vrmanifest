@@ -2,10 +2,10 @@
   "source": "Unity",
   "applications": [
     {
-      "app_key": "application.generated.unity.katminis.exe",
+      "app_key": "application.generated.unity.katvrdemo.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\benma\\Local Storage\\Unity Projects\\KatVR-Maze-Game\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\benma\\Local Storage\\Unity Projects\\KatVR-Demo\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "KATVR Demo [Testing]"

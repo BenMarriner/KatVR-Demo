@@ -105,6 +105,22 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean OpenInventory
+        {
+            get
+            {
+                return SteamVR_Actions.default_OpenInventory;
+            }
+        }
+        
+        public virtual SteamVR_Action_Vector2 MoveLateral
+        {
+            get
+            {
+                return SteamVR_Actions.default_MoveLateral;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
