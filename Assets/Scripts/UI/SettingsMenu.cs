@@ -1,10 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Net;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
-using Valve.VR.InteractionSystem;
 
 public class SettingsMenu : MonoBehaviour
 {
